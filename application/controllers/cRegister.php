@@ -4,7 +4,7 @@
       public function __construct()
       {
          parent::__construct();
-         $this->load->model('mRegisterr');
+         $this->load->model('mRegister');
       }
 
       function formRegister()
