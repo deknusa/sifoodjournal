@@ -19,7 +19,6 @@
 		}
 		
 		$('#formlogin').submit();
-			
 	}
 </script>
 <!-- End Javascript -->
@@ -37,7 +36,7 @@
               <div class="row">
                 <div class="col-md-6 form-group">
                   <label>Email</label>
-                  <input type="email" name="Email" class="form-control" id="Email" placeholder="your@mail.com" required>
+                  <input type="text" name="Email" class="form-control" id="Email" placeholder="your@mail.com" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <label>Password</label>
