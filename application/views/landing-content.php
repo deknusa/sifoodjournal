@@ -62,7 +62,7 @@
 
               <div class="position-relative mt-4">
                 <img src="<?php echo base_url('application/assets/img/about-2.jpg');?>" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+                <a href="" class="glightbox play-btn"></a>
               </div>
             </div>
           </div>
