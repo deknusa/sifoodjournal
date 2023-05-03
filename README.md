@@ -1,4 +1,4 @@
-# Project Base Learning - _Food Journal_
+# Project Based Learning - _Food Journal_
 
 Sistem informasi _food journaling_ merupakan sebuah layanan sistem berbasis website yang membantu pengguna dalam melakukan kegiatan pencatatan dan pelacakan terhadap makanan yang dikonsumsi oleh pengguna.
 Dengan harapan, sistem ini dirancang untuk merubah pola pencatatan makanan yang dilakukan secara konvesional dengan menggunakan media kertas, dapat dipermudah dengan hadirnya digitalisasi terhadap metode pencatatan yang dilakukan.
