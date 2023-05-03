@@ -3,11 +3,11 @@
 Sistem informasi _food journaling_ merupakan sebuah layanan sistem berbasis website yang membantu pengguna dalam melakukan kegiatan pencatatan dan pelacakan terhadap makanan yang dikonsumsi oleh pengguna.
 Dengan harapan, sistem ini dirancang untuk merubah pola pencatatan makanan yang dilakukan secara konvesional dengan menggunakan media kertas, dapat dipermudah dengan hadirnya digitalisasi terhadap metode pencatatan yang dilakukan.
 
-## Getting Started
+<!-- ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. -->
 
-### Prerequisites
+<!-- ### Prerequisites
 
 What things you need to install the software and how to install them
 
@@ -55,24 +55,27 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system -->
 
 ## Dibangun Menggunakan
 
 * [CodeIgniter 3](https://codeload.github.com/bcit-ci/CodeIgniter/zip/3.1.13) - Web Framework
 * [Bootstrap](https://getbootstrap.com/) - CSS Libraries
 
-## Contributing
+<!-- ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. -->
 
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Pengembang
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kadek Nusa** - *1st Developer* - [deknusa](https://github.com/deknusa)
+* **Nandi Balakeswara** - *2nd Developer* - [NandiBalakeswara](https://github.com/NandiBalakeswara)
+* **Dhiyo Adhiyasa** - *3rd Developer* - [gdeAdhu](https://github.com/gdeAdhi)
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
