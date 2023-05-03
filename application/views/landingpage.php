@@ -24,10 +24,10 @@
   <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
   <link href="<?php echo base_url('application/assets/vendor/glightbox/css/glightbox.min.css');?>" rel="stylesheet">
   <link href="<?php echo base_url('application/assets/vendor/swiper/swiper-bundle.min.css');?>" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="<?php echo base_url('application/assets/css/main.css');?>">
-
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
   <!-- =======================================================
   * Template Name: Impact
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -104,6 +104,7 @@
   <script src="<?php echo base_url('application/assets/vendor/swiper/swiper-bundle.min.js');?>"></script>
   <script src="<?php echo base_url('application/assets/vendor/isotope-layout/isotope.pkgd.min.js');?>"></script>
   <script src="<?php echo base_url('application/assets/vendor/php-email-form/validate.js');?>"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Template Main JS File -->
   <script src="<?php echo base_url('application/assets/js/main.js');?>"></script>

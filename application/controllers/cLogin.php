@@ -15,7 +15,7 @@
 
       function proseslogin()
 		{
-			$this->mlogin->proseslogin();	
+			$this->mLogin->proseslogin();	
 		}
 		
 		function logout()
