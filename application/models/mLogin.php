@@ -7,12 +7,12 @@
 			$Email=$this->input->post('Email');
 			$Password=$this->input->post('Password');
 			
-			$sql="select * from tbdaftar where Email='".$Email."' ";
-			$sql.="and Password='".$Password."'";
+			$sql="SELECT * FROM tbdaftar WHERE Email='".$Email."' ";
+			$sql.="AND Password='".$Password."'";
 			$query=$this->db->query($sql);
 
 			$data=$query->row();
-			$Level = $data->Level;
+			$Level=$data->Level;
 			$Email=$data->Email;
 			$NamaLengkap=$data->NamaLengkap;
 			$session=array(
@@ -23,12 +23,11 @@
 			if ($query->num_rows()>0)
 			{
 				if ($Level == 'Admin'){
-					
 					$this->session->set_userdata($session);
 					redirect('cutama/tampiladmin');
 				}
-				else{
-					
+				else 
+				{
 					$this->session->set_userdata($session);
 					redirect('cutama/tampiluser');
 					

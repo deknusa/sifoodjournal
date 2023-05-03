@@ -7,10 +7,12 @@
 			$this->load->model('mvalidasi');
 			$this->mvalidasi->validasi();
 		}
+
 		function tampiladmin()
 		{
 			$this->load->view('halaman-admin');	
-		}	
+		}
+			
 		function tampiluser()
 		{
 			$this->load->view('halaman-user');	
