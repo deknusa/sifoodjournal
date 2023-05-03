@@ -76,7 +76,7 @@
         <h1>Register</h1>
 
           <div class="col-lg-8">
-            <form name="formlogin" id="formlogin" action="<?php echo base_url('cregister/formregister');?>" method="post" role="form" class="php-email-form">
+            <form name="formlogin" id="formlogin" action="<?php echo base_url('clogin/proseslogin');?>" method="post" role="form" class="php-email-form">
 
               <div class="row">
                 <div class="col-md-6 form-group">
