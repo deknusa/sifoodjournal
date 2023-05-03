@@ -87,6 +87,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Terhadap ilmu dari dosen pengampu perkuliahan
 * Inspirasi dari beberapa teman
-* Situs penolong pengembang
+* Situs penyelamat (_stackoverflow, petanikode, youtube, dsb_)
 * dll.
 
