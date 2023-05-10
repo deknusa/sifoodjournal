@@ -3,7 +3,7 @@
 	{
         function validasi()
         { 
-            if($this->session->userdata('Email')==''){
+            if($this->session->userdata('Username')==''){
                 echo "<script>alert('Anda tidak dapat mengakses halaman ini, Silahkan login terlebih dahulu')</script>";
                 redirect('clogin/fromlogin','refresh');
              }

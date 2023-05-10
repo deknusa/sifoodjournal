@@ -37,7 +37,7 @@
 </nav>
 Selamat Datang
 <?php
-    echo $this->session->userdata('NamaLengkap');
+    echo $this->session->userdata('Username');
 ?>
     
 <?php

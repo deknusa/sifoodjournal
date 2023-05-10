@@ -4,20 +4,19 @@
 
 		function proseslogin()
 		{
-			$Email=$this->input->post('Email');
+			$Username=$this->input->post('Email');
 			$Password=$this->input->post('Password');
 			
-			$sql="SELECT * FROM tbdaftar WHERE Email='".$Email."' ";
+			$sql="SELECT * FROM tblogin WHERE Username='".$Username."' ";
 			$sql.="AND Password='".$Password."'";
 			$query=$this->db->query($sql);
 
 			$data=$query->row();
 			$Level=$data->Level;
-			$Email=$data->Email;
-			$NamaLengkap=$data->NamaLengkap;
+			$Username=$data->Username;
+			
 			$session=array(
-				'Email'=>$Email,
-				'NamaLengkap'=>$NamaLengkap
+				'Username'=>$Username
 			);	
 			
 			if ($query->num_rows()>0)
