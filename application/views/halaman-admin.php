@@ -16,10 +16,15 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white " href="<?php echo base_url();?>">User</a>
+          <a class="nav-link text-white " href="<?php echo base_url();?>">Admin</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="#">MasterData</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Master Data</a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item text-dark" href="#">Akun User</a></li>
+            <li><a class="dropdown-item text-dark" href="#" >Informasi Umum</a></li>
+            <li><a class="dropdown-item text-dark" href="#" >Informasi Nutrisi</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white " href="#">Laporan</a>

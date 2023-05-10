@@ -18,8 +18,16 @@
         <li class="nav-item">
           <a class="nav-link text-white " href="<?php echo base_url();?>">User</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="#">MasterData</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Pencatatan</a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item text-dark" href="#">Makanan</a></li>
+            <li><a class="dropdown-item text-dark" href="#">Gejala</a></li>
+            <li><a class="dropdown-item text-dark" href="#">Mood</a></li>
+            <li><a class="dropdown-item text-dark" href="#">BAB</a></li>
+            <li><a class="dropdown-item text-dark" href="#">Tidur</a></li>
+            <li><a class="dropdown-item text-dark" href="#">Catatan</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white " href="#">Laporan</a>
