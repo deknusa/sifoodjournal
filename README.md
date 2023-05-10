@@ -79,14 +79,14 @@ Kami menggunakan metode [SemVer](http://semver.org/) dalam pembuatan versi siste
 
 Lihat beberapa kontributor pada [contributors](https://github.com/your/project/contributors) yang turut berpartisipasi dalam proyek pengembangan sistem ini.
 
-<!-- ## License
+## Lisensi
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->
+Proyek berlisensi dibawah lisensi MIT - lihat pada berkas [LICENSE.md](LICENSE.md) untuk lebih detail
 
 ## Acknowledgments
 
-* Terhadap ilmu dari dosen pengampu perkuliahan
-* Inspirasi dari beberapa teman
-* Situs penyelamat (_stackoverflow, petanikode, youtube, dsb_)
+* Terhadap ilmu yang dibagikan oleh dosen pengampu terkait pada perkuliahan
+* Inspirasi dan bantuan dari beberapa teman
+* Situs pencarian solusi (_stackoverflow, petanikode, youtube, dsb_)
 * dll.
 
