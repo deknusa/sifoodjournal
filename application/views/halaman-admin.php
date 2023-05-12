@@ -42,7 +42,7 @@
 </nav>
 Selamat Datang
 <?php
-    echo $this->session->userdata('Username');
+    echo $this->session->userdata('NamaLengkap');
 ?>
     
 <?php
