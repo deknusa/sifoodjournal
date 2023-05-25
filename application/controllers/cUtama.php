@@ -10,12 +10,12 @@
 
 		function tampiladmin()
 		{
-			$this->load->view('halaman-admin');	
+			$this->load->view('dashboard/dashboard');	
 		}
 			
 		function tampiluser()
 		{
-			$this->load->view('halaman-user');	
+			$this->load->view('dashboard/dashboard');	
 		}	
 	}
 ?>
