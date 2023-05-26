@@ -15,7 +15,7 @@
 			
 		function tampiluser()
 		{
-			$this->load->view('dashboard/dashboard');	
+			$this->load->view('halaman-user');	
 		}	
 	}
 ?>

@@ -14,11 +14,13 @@
 			$data=$query->row();
 			$Level=$data->Level;
 			$Email=$data->Email;
+			$KodeUser=$data->KodeUser;
 			$NamaLengkap=$data->NamaLengkap;
 			
 			$session=array(
 				'Email'=>$Email,
-				'NamaLengkap'=>$NamaLengkap
+				'NamaLengkap'=>$NamaLengkap,
+				'KodeUser'=>$KodeUser
 			);	
 			
 			if ($query->num_rows()>0)
