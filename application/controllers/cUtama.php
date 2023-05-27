@@ -10,7 +10,7 @@
 
 		function tampiladmin()
 		{
-			$this->load->view('dashboard/dashboard');	
+			$this->load->view('halaman-admin');	
 		}
 			
 		function tampiluser()

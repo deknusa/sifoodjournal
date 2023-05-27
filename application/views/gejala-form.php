@@ -1,23 +1,23 @@
 <script language="javascript">
 	function simpandata()
 	{
-		var NamaLengkap=$('#NamaLengkap').val();
-		if (NamaLengkap=="")
+		var Waktu=$('#Waktu').val();
+		if (Waktu=="")
 		{
-			alert ("Nama lengkap masih kosong");
-			$('#NamaLengkap').focus();
+			alert ("Waktu masih kosong");
+			$('#Waktu').focus();
 			return false;	
 		}	
 		
-		var Alamat=$('#Alamat').val();
-		if (Alamat=="")
+		var Gejala=$('#Gejala').val();
+		if (Gejala=="")
 		{
-			alert ("Alamat masih kosong");
-			$('#Alamat').focus();
+			alert ("Gejala masih kosong");
+			$('#Gejala').focus();
 			return false;	
 		}
 		
-		$('#formdaftar').submit();
+		$('#fromcatat').submit();
 			
 	}
 </script>
@@ -46,25 +46,20 @@
 ?>
   
   
-  <form name="formdaftar" id="formdaftar" method="post" action="<?php echo base_url('cpendaftaran/simpandata'); ?>">
-  	 <input type="hidden" name="KodeDaftar" id="KodeDaftar"/>
+  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cgejala/simpandata'); ?>">
+  	 <input type="hidden" name="KodeUser" id="KodeUser"/>
  	 <div class="mb-3 mt-3">
-      <label>Nama Lengkap</label>
-      <input type="text" class="form-control" name="NamaLengkap" id="NamaLengkap" >
+      <label>Waktu</label>
+      <input type="datetime-local" class="form-control" name="Waktu" id="Waktu" >
     </div>
     <div class="mb-3 mt-3">
-      <label>Alamat</label>
-      <input type="text" class="form-control" id="Alamat" name="Alamat">
+      <label>Gejala</label>
+      <input type="text" class="form-control" id="Gejala" name="Gejala">
     </div>
     <div class="mb-3 mt-3">
-      <label>Telp</label>
-      <input type="text" class="form-control"  name="Telp" id="Telp">
+      <label>Keterangan</label>
+      <input type="text" class="form-control"  name="Keterangan" id="Keterangan">
     </div>
-    <div class="mb-3 mt-3">
-      <label>Email</label>
-      <input type="text" class="form-control" id="Email" name="Email">
-    </div>
-   
-    <button type="button" class="btn btn-primary" onclick="simpandata()">Daftar</button>
+    <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
   </form>
 </div>
