@@ -17,9 +17,19 @@
 
 		function simpandata()
 		{
-			$KodeUser=$this->session->userdata('KodeUser');
-			$this->mGejala->simpandata($KodeUser);
+			$User=$this->session->userdata('KodeUser');
+			$this->mGejala->simpandata($User);
 			redirect('cgejala/formgejala');	
+		}
+
+		function hapusdata($KodeGejala){
+			$this->mGejala->hapusdata($KodeGejala);
+			redirect('cgejala/formgejala');
+		}
+
+		function editdata($KodeGejala)
+		{
+			$this->mGejala->editdata($KodeGejala);	
 		}
 
 	}

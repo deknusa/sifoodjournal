@@ -56,7 +56,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="layout-static.html">Makan</a>
-                                    <a class="nav-link" href="layout-static.html">Mood</a>
+                                    <a class="nav-link" href="<?php echo base_url('cMood/formMood'); ?>">Mood</a>
                                     <a class="nav-link" href="<?php echo base_url('cGejala/formGejala'); ?>">Gejala</a>
                                     <a class="nav-link" href="layout-static.html">BAB</a>
                                     <a class="nav-link" href="layout-static.html">Tidur</a>

@@ -1,25 +1,25 @@
 <script language= "javascript" >
-  function hapusdata(KodeGejala){
+  function hapusdata(KodeMood){
     if(confirm("Apakah yakin menghapus data ini ?")){
-      window.open("<?php echo base_url()?>cgejala/hapusdata/"+KodeGejala,"_self");
+      window.open("<?php echo base_url()?>cmood/hapusdata/"+KodeMood,"_self");
     }
   }
-  function editdata(KodeGejala)
+  function editdata(KodeMood)
 	{
-		//alert(KodeGejala);
-    window.open("<?php echo base_url()?>cgejala/editdata/"+KodeGejala,"#script");
+		//alert(KodeMood);
+    window.open("<?php echo base_url()?>cmood/editdata/"+KodeMood,"#script");
 	}
 
 </script>
 
 <div class="container mt-3">
-  <h4>Data Gejala</h4>
+  <h4>Data Mood</h4>
  <table class="table table-hover table-bordered">
     <thead>
       <tr>
         <th>No</th>
         <th>Waktu</th>
-        <th>Gejala</th>
+        <th>Mood</th>
         <th>Keterangan</th>
         <th>Aksi</th>
       </tr>
@@ -39,11 +39,11 @@
       <tr>
         <td><?php echo $no; ?></td>
         <td><?php echo $data->Waktu;  ?></td>
-        <td><?php echo $data->Gejala;  ?></td>
+        <td><?php echo $data->Mood;  ?></td>
         <td><?php echo $data->Keterangan;  ?></td>
         <td>
-        <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeGejala; ?>')">Edit</button>
-        <button type="button" class="btn btn-danger btn-sm" onclick="hapusdata('<?php echo $data->KodeGejala ?>')">Hapus</button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeMood; ?>')">Edit</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="hapusdata('<?php echo $data->KodeMood ?>')">Hapus</button>
         </td>
       </tr>
       

@@ -9,11 +9,11 @@
 			return false;	
 		}	
 		
-		var Gejala=$('#Gejala').val();
-		if (Gejala=="")
+		var Mood=$('#Mood').val();
+		if (Mood=="")
 		{
-			alert ("Gejala masih kosong");
-			$('#Gejala').focus();
+			alert ("Mood masih kosong");
+			$('#Mood').focus();
 			return false;	
 		}
 		
@@ -23,7 +23,7 @@
 </script>
 
 <div class="container mt-3">
-  <h4>Pencatatan Gejala</h4>
+  <h4>Pencatatan Mood</h4>
   
   
  <?php
@@ -46,16 +46,21 @@
 ?>
   
   
-  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cgejala/simpandata'); ?>">
-  	 <input type="hidden" name="KodeGejala" id="KodeGejala"/>
+  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cmood/simpandata'); ?>">
+  	 <input type="hidden" name="KodeMood" id="KodeMood"/>
  	 <div class="mb-3 mt-3">
       <label>Waktu</label>
       <input type="datetime-local" class="form-control" name="Waktu" id="Waktu" >
     </div>
-    <div class="mb-3 mt-3">
-      <label>Gejala</label>
-      <input type="text" class="form-control" id="Gejala" name="Gejala">
-    </div>
+    <label>Mood</label>
+            <select class="form-select" id="Mood" name="Mood">
+            <option value="">Pilih</option>
+            <option value="Gembira">Gembira</option>
+            <option value="Sedih">Sedih</option>
+            <option value="Biasa">Biasa</option>
+            <option value="Swing">Swing</option>
+            <option value="Rewel">Rewel</option>
+            </select>
     <div class="mb-3 mt-3">
       <label>Keterangan</label>
       <input type="text" class="form-control"  name="Keterangan" id="Keterangan">

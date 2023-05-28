@@ -1,5 +1,5 @@
 <?php
-	class mGejala extends CI_Model
+	class mMood extends CI_Model
 	{
 
 	
@@ -9,29 +9,29 @@
 			$KodeUser=(int)$User;
 			$data['KodeUser']=$KodeUser;
             
-			$KodeGejala=$data['KodeGejala'];
-			if ($KodeGejala=="")
+			$KodeMood=$data['KodeMood'];
+			if ($KodeMood=="")
 			{
 				//simpan
-				$this->db->insert('tbgejala',$data);
+				$this->db->insert('tbmood',$data);
 				$this->session->set_flashdata('pesan','Data sudah disimpan');	
 			}
 			else
 			{
 				//edit	
 				$Kode=array(
-					'KodeGejala'=>$KodeGejala
+					'KodeMood'=>$KodeMood
 				);
 				$this->db->where($Kode);
-				$this->db->update('tbgejala',$data);
+				$this->db->update('tbmood',$data);
 				$this->session->set_flashdata('pesan','Data sudah diedit');
 			}
 		}
 		
 		function tampildata()
 		{
-			$this->db->order_by('KodeGejala', 'ASC');
-			$query = $this->db->get('tbgejala');
+			$this->db->order_by('KodeMood', 'ASC');
+			$query = $this->db->get('tbmood');
 
 			if ($query->num_rows() > 0) {
 				$hasil = $query->result();
@@ -42,21 +42,21 @@
 			return $hasil;
 		}
 
-		function hapusdata($KodeGejala){
-			$this->db->where('KodeGejala', $KodeGejala);
-			$this->db->delete('tbgejala');
+		function hapusdata($KodeMood){
+			$this->db->where('KodeMood', $KodeMood);
+			$this->db->delete('tbmood');
 		}
 
-		function editdata($KodeGejala)
+		function editdata($KodeMood)
 		{
-			$sql="select * from tbgejala where KodeGejala='".$KodeGejala."'";
+			$sql="select * from tbmood where KodeMood='".$KodeMood."'";
 			$query=$this->db->query($sql);
 			if ($query->num_rows()>0)
 			{
 				$data=$query->row();
-				echo "<script>$('#KodeGejala').val('".$data->KodeGejala."');</script>";
+				echo "<script>$('#KodeMood').val('".$data->KodeMood."');</script>";
 				echo "<script>$('#Waktu').val('".$data->Waktu."');</script>";	
-				echo "<script>$('#Gejala').val('".$data->Gejala."');</script>";
+				echo "<script>$('#Mood').val('".$data->Mood."');</script>";
 				echo "<script>$('#Keterangan').val('".$data->Keterangan."');</script>";
 			}
 		}	
