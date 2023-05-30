@@ -6,7 +6,7 @@
           <h2>Selamat Datang di <span>Food Journaling.</span></h2>
           <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="<?php echo base_url('cregister/formregister');?>" class="btn-get-started">Daftar</a>
+            <a href="<?php echo base_url('cregister/formregister');?>" class="btn-get-started ">Daftar</a>
             <a href="<?php echo base_url('clogin/formlogin');?>" class="btn-watch-video d-flex align-items-center"><span>Sudah memiliki akun?</span></a>
           </div>
         </div>

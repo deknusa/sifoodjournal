@@ -51,7 +51,7 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#hero" >Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -113,3 +113,9 @@
 </body>
 
 </html>
+
+<style>
+  a {
+    text-decoration: none!important;
+  }
+</style>
