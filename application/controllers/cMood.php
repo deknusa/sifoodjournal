@@ -10,7 +10,8 @@
 		function formMood()
 		{
 			$data['konten']=$this->load->view('mood-form','',TRUE);
-			$hasiltable['hasil']=$this->mMood->tampildata();
+			$KodeUser=$this->session->userdata('KodeUser');
+			$hasiltable['hasil']=$this->mMood->tampildata($KodeUser);
 			$data['table']=$this->load->view('mood-table',$hasiltable,TRUE);
 			$this->load->view('halaman-user',$data);	
 		}

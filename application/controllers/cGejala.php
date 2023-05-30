@@ -10,7 +10,8 @@
 		function formGejala()
 		{
 			$data['konten']=$this->load->view('gejala-form','',TRUE);
-			$hasiltable['hasil']=$this->mGejala->tampildata();
+			$KodeUser=$this->session->userdata('KodeUser');
+			$hasiltable['hasil']=$this->mGejala->tampildata($KodeUser);
 			$data['table']=$this->load->view('gejala-table',$hasiltable,TRUE);
 			$this->load->view('halaman-user',$data);	
 		}
@@ -30,6 +31,7 @@
 		function editdata($KodeGejala)
 		{
 			$this->mGejala->editdata($KodeGejala);	
+			redirect('cgejala/formgejala');
 		}
 
 	}

@@ -28,8 +28,9 @@
 			}
 		}
 		
-		function tampildata()
+		function tampildata($KodeUser)
 		{
+			$this->db->where('KodeUser', $KodeUser);
 			$this->db->order_by('KodeMood', 'ASC');
 			$query = $this->db->get('tbmood');
 
