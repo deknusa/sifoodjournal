@@ -86,10 +86,6 @@
     if (isset($landingContent)) {
       echo $landingContent;
     }
-
-    if (isset($landingKonten)) {
-      echo $landingKonten;
-    }
   ?>
 
 

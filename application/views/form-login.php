@@ -6,8 +6,8 @@
           <form name="formlogin" id="formlogin" action="<?php echo base_url('clogin/proseslogin');?>" style="width: 22rem">
             <!-- Input email disini -->
             <div class="form-outline mb-4">
-              <label class="form-label" style="margin-left: 0px;">Email address</label>
-              <input type="email" name="Email" id="Email" placeholder="email" required class="form-control">
+              <label class="form-label" style="margin-left: 0px;">Email</label>
+              <input type="email" name="Email" id="Email" placeholder="your@mail.com" required class="form-control">
               <div class="form-notch">
                 <div class="form-notch-leading" style="width: 9px;"></div>
                 <div class="form-notch-middle" style="width: 88.8px;"></div>
@@ -30,7 +30,7 @@
             </div>            
             <!-- Register buttons -->
             <div class="text-center">
-              <p>Bukan member? <a href="#!">Daftar disini.</a></p>
+              <p>Bukan member? <a href="<?php echo base_url('cregister/formregister');?>">Daftar disini.</a></p>
             </div>
           </form>
         </section>
