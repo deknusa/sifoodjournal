@@ -4,7 +4,7 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Selamat Datang di <span>Food Journaling.</span></h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <p>Lakukan pencatatan makanan yang dikonsumsi, guna mengatur pola hidup yang sehat dalam mengontrol konsumsi makanan Anda.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="<?php echo base_url('cregister/formregister');?>" class="btn-get-started ">Daftar</a>
             <a href="<?php echo base_url('clogin/formlogin');?>" class="btn-watch-video d-flex align-items-center"><span>Sudah memiliki akun?</span></a>

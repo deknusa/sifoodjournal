@@ -9,7 +9,7 @@
 
       function formRegister()
       {
-         $data['landingKonten']=$this->load->view('register-form','',TRUE);
+         $data['landingContent']=$this->load->view('form-register','',TRUE);
          $this->load->view('landingpage', $data);
       }
 

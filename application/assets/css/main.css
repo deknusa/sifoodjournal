@@ -291,7 +291,8 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #7C9070;
 }
 
 .header.sticked {
@@ -1870,8 +1871,9 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
-  padding: 60px 0 0 0;
+  /* background: var(--color-primary); */
+  background-color: #7C9070;
+  padding: 100px 0 0 0;
 }
 
 @media (min-width: 1365px) {
@@ -1944,7 +1946,7 @@ section {
 }
 
 .hero .icon-boxes {
-  padding-bottom: 60px;
+  padding-bottom: 150px;
 }
 
 @media (min-width: 1200px) {
@@ -2558,7 +2560,8 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #7C9070;
   padding: 50px 0;
   color: white;
 }

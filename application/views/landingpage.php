@@ -37,7 +37,6 @@
   
   ======================================================== -->
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
@@ -45,13 +44,11 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="<?php echo base_url();?>" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Food Journal<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero" >Beranda</a></li>
+          <li><a href="<?php echo base_url();?>" >Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -73,7 +70,7 @@
           </li>
           <!-- <li><a href="#contact">Contact</a></li> -->
           <li></li>
-          <li><a href="#">Masuk</a></li>
+          <li><a href="<?php echo base_url("clogin/formlogin");?>">Masuk</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -109,9 +106,7 @@
 
   <!-- Template Main JS File -->
   <script src="<?php echo base_url('application/assets/js/main.js');?>"></script>
-
 </body>
-
 </html>
 
 <style>

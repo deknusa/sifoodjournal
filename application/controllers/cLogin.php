@@ -9,7 +9,7 @@
 
       function formLogin()
 		{
-			$data['landingKonten']=$this->load->view('login-form','',TRUE);
+			$data['landingContent']=$this->load->view('form-login','',TRUE);
 			$this->load->view('landingpage',$data);	
 		}
 
