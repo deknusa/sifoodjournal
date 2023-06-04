@@ -4,9 +4,20 @@
       function insertData()
       {
          $data=$_POST;
-         $data['Level']="User";
+         $Email= $data['Email'];
+         $this->db->where('Email', $Email);
+			$query = $this->db->get('tbuser');
 
-         $this->db->insert('tbuser', $data);
+         if($query->num_rows()>0){
+            $this->session->set_flashdata('pesan','Email sudah terdaftar');
+				redirect('cregister/formregister');
+         }
+         else{
+            $data=$_POST;
+            $data['Level']="User";
+            $this->db->insert('tbuser', $data);
+         }
+        
       }
    }
 
