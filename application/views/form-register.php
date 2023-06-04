@@ -1,9 +1,27 @@
-<section class="pb-4"">
+<section class="pb-4">
       <div class="bg white border rounded-5">
       <h1 style="text-align: center; margin-top: 30px">Register</h1>
 
         <section class="w-100 p-4 d-flex justify-content-center pb-4">
-          <form name="formlogin" id="formlogin" action="<?php echo base_url('clogin/proseslogin');?>" style="width: 22rem">
+          <form name="formlogin" id="formlogin" method="post" action="<?php echo base_url('cregister/procregister');?>" style="width: 22rem">
+          <?php
+            $pesan=$this->session->flashdata('pesan');
+            if ($pesan=="")
+            {
+              echo "";	
+            }
+            else
+            {	
+          ?>
+            
+              <div class="alert alert-danger alert-dismissible">
+              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+              <?php echo $pesan; ?>
+            </div>
+                
+          <?php
+            }
+          ?>
             <!-- Input namalengkap disini -->
             <div class="form-outline mb-4">
               <label class="form-label" style="margin-left: 0px;">Nama Lengkap</label>
