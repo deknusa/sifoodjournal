@@ -48,7 +48,25 @@
             <div class="col-lg-8">
               <h1 style="text-align: center; margin-top: 30px">Register</h1>
               <form name="formregister" id="formregister" action="<?php echo base_url('cregister/procregister');?>" method="post" role="form" class="php-email-form position-relative" style="z-index:1; position: relative;">
-  
+
+                <?php
+                  $pesan=$this->session->flashdata('pesan');
+                  if ($pesan=="")
+                  {
+                    echo "";	
+                  }
+                  else
+                  {	
+                ?>
+                    <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <?php echo $pesan; ?>
+                  </div>
+                      
+                <?php
+                  }
+                ?>
+                <br>
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <label>Nama Lengkap</label>
@@ -74,16 +92,16 @@
                     <input type="password" class="form-control" name="Password" id="Password" placeholder="password" required>
                   </div>
                 </div>
-                <div class="my-3">
+                <!-- <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
+                </div> -->
                 <div class="text-center"><button type="submit" onclick=insertData()>Daftar</button></div>
               </form>
             </div><!-- End Register Form -->
         </div>
-
+        
         </div>
 
       </div>

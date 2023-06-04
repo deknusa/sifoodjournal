@@ -7,9 +7,9 @@
 			$Email=$this->input->post('Email');
 			$Password=$this->input->post('Password');
 			
-			$sql="SELECT * FROM tbuser WHERE Email='".$Email."' ";
-			$sql.="AND Password='".$Password."'";
-			$query=$this->db->query($sql);
+			$this->db->where('Email', $Email);
+			$this->db->where('Password', $Password);
+			$query = $this->db->get('tbuser');
 
 			$data=$query->row();
 			$Level=$data->Level;
