@@ -31,7 +31,6 @@
 		function editdata($KodeGejala)
 		{
 			$this->mGejala->editdata($KodeGejala);	
-			redirect('cgejala/formgejala');
 		}
 
 	}
