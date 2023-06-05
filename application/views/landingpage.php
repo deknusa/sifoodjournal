@@ -70,7 +70,7 @@
           </li>
           <!-- <li><a href="#contact">Contact</a></li> -->
           <li></li>
-          <li><a href="<?php echo base_url("clogin/formlogin");?>">Masuk</a></li>
+          <li><a href="<?php echo base_url("clogin/formlogin");?>">Akun</a></li>
         </ul>
       </nav><!-- .navbar -->
 
