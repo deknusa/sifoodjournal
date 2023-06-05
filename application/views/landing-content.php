@@ -34,12 +34,12 @@
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+          <p>Beberapa informasi tentang kami.</p>
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-6">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+            <h3>Aplikasi Asisten Pencatat makan Harian</h3>
             <img src="application/assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
             <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
             <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
@@ -131,7 +131,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Services</h2>
+          <h2>Fitur dari Produk kami</h2>
           <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
         </div>
 
