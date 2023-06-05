@@ -72,7 +72,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- <section id="clients" class="clients">
       <div class="container" data-aos="zoom-out">
 
         <div class="clients-slider swiper">
@@ -89,10 +89,11 @@
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section> -->
+    <!-- End Clients Section -->
 
     <!-- ======= Stats Counter Section ======= -->
-    <section id="stats-counter" class="stats-counter">
+    <!-- <section id="stats-counter" class="stats-counter">
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4 align-items-center">
@@ -106,24 +107,28 @@
             <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
-            </div><!-- End Stats Item -->
+            </div> -->
+            <!-- End Stats Item -->
 
-            <div class="stats-item d-flex align-items-center">
+            <!-- <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div><!-- End Stats Item -->
+            </div> -->
+            <!-- End Stats Item -->
 
-            <div class="stats-item d-flex align-items-center">
+            <!-- <div class="stats-item d-flex align-items-center">
               <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div><!-- End Stats Item -->
+            </div> -->
+            <!-- End Stats Item -->
 
-          </div>
+          <!-- </div>
 
         </div>
 
       </div>
-    </section><!-- End Stats Counter Section -->
+    </section> -->
+    <!-- End Stats Counter Section -->
 
 
     <!-- ======= Our Services Section ======= -->
@@ -214,7 +219,7 @@
 
         <div class="section-header">
           <h2>Testimonials</h2>
-          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+          <p>Testimoni dari beberapa pengguna aplikasi kami</p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
