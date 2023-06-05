@@ -31,7 +31,7 @@
 		function tampildata($KodeUser)
 		{
 			$this->db->where('KodeUser', $KodeUser);
-			$this->db->order_by('KodeMood', 'ASC');
+			$this->db->order_by('Waktu', 'DESC');
 			$query = $this->db->get('tbmood');
 
 			if ($query->num_rows() > 0) {

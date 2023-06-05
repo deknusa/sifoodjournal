@@ -31,7 +31,7 @@
 		function tampildata($KodeUser)
 		{
 			$this->db->where('KodeUser', $KodeUser);
-			$this->db->order_by('KodeGejala', 'ASC');
+			$this->db->order_by('Waktu', 'DESC');
 			$query = $this->db->get('tbgejala');
 
 			if ($query->num_rows() > 0) {
