@@ -194,7 +194,7 @@
                 <i class="bi bi-calendar4-week"></i>
               </div>
               <h3>Pencatatan Tidur</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Pencatatan tidur  proses mencatat dan melacak pola tidur seseorang. Hal ini dilakukan untuk memantau kualitas tidur seseorang.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -205,7 +205,7 @@
                 <i class="bi bi-chat-square-text"></i>
               </div>
               <h3>Catatan Harian</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Pencatatan harian sebuah catatan di mana seseorang mencatat aktivitas, peristiwa, pengalaman, pemikiran, atau perasaan mereka sehari-hari.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
