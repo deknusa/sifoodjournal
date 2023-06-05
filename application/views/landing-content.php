@@ -3,7 +3,7 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Memulai langkah awal konsumsi sehat, <span>bersama kami.</span></h2>
+          <h2>Memulai langkah awal konsumsi sehat, <span>bersama kita.</span></h2>
           <p>Lakukan pencatatan makanan yang dikonsumsi, guna mengatur pola hidup yang sehat dalam mengontrol konsumsi makanan Anda.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="<?php echo base_url('cregister/formregister');?>" class="btn-get-started ">Daftar</a>
