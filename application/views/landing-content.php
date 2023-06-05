@@ -132,7 +132,7 @@
 
         <div class="section-header">
           <h2>Fitur dari Produk kami</h2>
-          <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+          <p>Beberapa Fitur yang ada dalam produk kami</p>
         </div>
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
