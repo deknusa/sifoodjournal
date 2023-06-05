@@ -50,8 +50,8 @@
 
 		function editdata($KodeMood)
 		{
-			$sql="select * from tbmood where KodeMood='".$KodeMood."'";
-			$query=$this->db->query($sql);
+			$this->db->where('KodeMood',$KodeMood);
+			$query = $this->db->get('tbmood');
 			if ($query->num_rows()>0)
 			{
 				$data=$query->row();

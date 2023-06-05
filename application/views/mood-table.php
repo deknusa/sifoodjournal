@@ -6,8 +6,10 @@
   }
   function editdata(KodeMood)
 	{
-		//alert(KodeMood);
-    window.open("<?php echo base_url()?>cmood/editdata/"+KodeMood,"#script");
+		if(confirm("Apakah yakin mengedit data ini ?")){
+     load("cmood/editdata/"+KodeMood,"#script");
+    }
+    
 	}
 
 </script>

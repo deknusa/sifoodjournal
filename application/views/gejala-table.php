@@ -4,10 +4,10 @@
       window.open("<?php echo base_url()?>cgejala/hapusdata/"+KodeGejala,"_self");
     }
   }
-  function editdata(KodeGejala)
-	{
-		//alert(KodeGejala);
-    window.open("<?php echo base_url()?>cgejala/editdata/"+KodeGejala,"#script");
+  function editdata(KodeGejala){
+		if(confirm("Apakah yakin mengedit data ini ?")){
+     load("cgejala/editdata/"+KodeGejala,"#script");
+    }
 	}
 
 </script>

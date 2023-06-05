@@ -43,7 +43,7 @@
       
 <?php
 	 }
-?>
+?> 
   
   
   <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cgejala/simpandata'); ?>">

@@ -143,6 +143,7 @@
         <script src="<?php echo base_url('application/assets/dashboard/assets/demo/chart-bar-demo.js');?>"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo base_url('application/assets/dashboard/js/datatables-simple-demo.js');?>"></script>
+
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </html>
