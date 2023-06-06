@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>User Dashboard</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="<?php echo base_url('application/assets/dashboard/css/styles.css');?>" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -55,9 +55,9 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Makan</a>
-                                    <a class="nav-link" href="<?php echo base_url('cMood/formMood'); ?>">Mood</a>
-                                    <a class="nav-link" href="<?php echo base_url('cGejala/formGejala'); ?>">Gejala</a>
+                                    <a class="nav-link" href="<?php echo base_url('cMakan/formMakan');?>">Makan</a>
+                                    <a class="nav-link" href="<?php echo base_url('cMood/formMood');?>">Mood</a>
+                                    <a class="nav-link" href="<?php echo base_url('cGejala/formGejala');?>">Gejala</a>
                                     <a class="nav-link" href="layout-static.html">BAB</a>
                                     <a class="nav-link" href="layout-static.html">Tidur</a>
                                     <a class="nav-link" href="layout-static.html">Catatan Harian</a>
