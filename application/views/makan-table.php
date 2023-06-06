@@ -46,7 +46,7 @@
            <td><?php echo $data->Jumlah;?></td>
            <td><?php echo $data->Satuan;?></td>
            <td><?php echo $data->Kalori;?></td>
-           <td><?php echo $data->BahanMakana;?></td>
+           <td><?php echo $data->BahanMakanan;?></td>
            <td><?php echo $data->Keterangan;?></td>
            <td>
            <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeMakan;?>')">Edit</button>
