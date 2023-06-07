@@ -74,7 +74,7 @@ Kami menggunakan metode [SemVer](http://semver.org/) dalam pembuatan versi siste
 
 * **Kadek Nusa** - *1st Developer* - [deknusa](https://github.com/deknusa)
 * **Nandi Balakeswara** - *2nd Developer* - [NandiBalakeswara](https://github.com/NandiBalakeswara)
-* **Dhiyo Adhiyasa** - *3rd Developer* - [gdeAdhu](https://github.com/gdeAdhi)
+* **Dhiyo Adhiyasa** - *3rd Developer* - [gdeAdhi](https://github.com/gdeAdhi)
 
 
 Lihat beberapa kontributor pada [contributors](https://github.com/your/project/contributors) yang turut berpartisipasi dalam proyek pengembangan sistem ini.

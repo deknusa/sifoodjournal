@@ -148,7 +148,8 @@
                 <i class="bi bi-activity"></i>
               </div>
               <h3>Pencatatan Makanan</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Pencatatan makanan adalah proses mencatat dan mencatat informasi terkait makanan yang dikonsumsi. 
+                Hal ini dilakukan dengan tujuan untuk mengawasi dan memantau asupan makanan sehari-hari, termasuk jumlah kalori, nutrisi, dan pola makan secara umum.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -159,7 +160,7 @@
                 <i class="bi bi-broadcast"></i>
               </div>
               <h3>Pencatatan Mood</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>pencatatan mood yaitu proses mencatat dan mencatat tentang segala mood yang di alami sehari-harinya.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -170,7 +171,8 @@
                 <i class="bi bi-easel"></i>
               </div>
               <h3>Pencatatan Gejala</h3>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Pencatatan gejala proses mencatat  gejala atau tanda-tanda yang dialami oleh seseorang terkait dengan gejala yang dialaminya. 
+                Hal ini dilakukan untuk memberikan informasi yang lebih lengkap.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -181,7 +183,7 @@
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
               <h3>Pencatatan BAB</h3>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Pencatatan BAB proses mencatat pola buang air besar seseorang. Hal ini dilakukan untuk memantau kesehatan pencernaan seseorang.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -192,7 +194,7 @@
                 <i class="bi bi-calendar4-week"></i>
               </div>
               <h3>Pencatatan Tidur</h3>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Pencatatan tidur  proses mencatat dan melacak pola tidur seseorang. Hal ini dilakukan untuk memantau kualitas tidur seseorang.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -203,7 +205,7 @@
                 <i class="bi bi-chat-square-text"></i>
               </div>
               <h3>Catatan Harian</h3>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Pencatatan harian sebuah catatan di mana seseorang mencatat aktivitas, peristiwa, pengalaman, pemikiran, atau perasaan mereka sehari-hari.</p>
               <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
