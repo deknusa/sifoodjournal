@@ -6,8 +6,8 @@
   }
   function editdata(KodeGejala)
 	{
-		//alert(KodeGejala);
-    window.open("<?php echo base_url()?>cgejala/editdata/"+KodeGejala,"#script");
+	
+    load("cgejala/editdata/"+KodeGejala,"#script");
 	}
 
 </script>

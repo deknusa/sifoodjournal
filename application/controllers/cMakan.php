@@ -35,7 +35,6 @@
 		function editdata($KodeMakan)
 		{
 			$this->mMakan->editdata($KodeMakan);	
-			redirect('cmakan/formmakan');
 		}
 
 	}

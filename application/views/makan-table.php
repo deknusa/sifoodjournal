@@ -6,7 +6,7 @@
   }
   function editdata(KodeMakan)
 	{
-    window.open("<?php echo base_url()?>cmakan/editdata/"+KodeMakan,"#script");
+    load("cmakan/editdata/"+KodeMakan,"#script");
 	}
 
 </script>

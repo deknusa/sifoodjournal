@@ -7,7 +7,7 @@
   function editdata(KodeMood)
 	{
 		//alert(KodeMood);
-    window.open("<?php echo base_url()?>cmood/editdata/"+KodeMood,"#script");
+    load("cmood/editdata/"+KodeMood,"#script");
 	}
 
 </script>

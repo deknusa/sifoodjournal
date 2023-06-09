@@ -31,7 +31,7 @@
 		function tampildata($KodeUser)
 		{
 			$this->db->where('KodeUser', $KodeUser);
-			$this->db->order_by('KodeGejala', 'ASC');
+			$this->db->order_by('Waktu', 'DESC');
 			$query = $this->db->get('tbgejala');
 
 			if ($query->num_rows() > 0) {
@@ -50,8 +50,8 @@
 
 		function editdata($KodeGejala)
 		{
-			$sql="select * from tbgejala where KodeGejala='".$KodeGejala."'";
-			$query=$this->db->query($sql);
+			$this->db->where('KodeGejala', $KodeGejala);
+			$query = $this->db->get('tbgejala');
 			if ($query->num_rows()>0)
 			{
 				$data=$query->row();

@@ -32,7 +32,7 @@
 		function tampildata($KodeUser)
 		{
 			$this->db->where('KodeUser', $KodeUser);
-			$this->db->order_by('KodeMakan', 'DESC');
+			$this->db->order_by('Waktu', 'DESC');
 			$query = $this->db->get('tbmakan');
 
 			if ($query->num_rows() > 0) {
@@ -51,8 +51,8 @@
 
 		function editdata($KodeMakan)
 		{
-			$sql="select * from tbmakan where KodeMakan='".$KodeMakan."'";
-			$query=$this->db->query($sql);
+			$this->db->where('KodeMakan', $KodeMakan);
+			$query = $this->db->get('tbmakan');
 			if ($query->num_rows()>0)
 			{
 				$data=$query->row();
