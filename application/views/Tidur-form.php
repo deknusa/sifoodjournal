@@ -1,0 +1,69 @@
+<script language="javascript">
+	function simpandata()
+	{
+		var Waktu=$('#Waktu').val();
+		if (Waktu=="")
+		{
+			alert ("Waktu masih kosong");
+			$('#Waktu').focus();
+			return false;	
+		}	
+		
+		var Tidur=$('#Tidur').val();
+		if (Tidur=="")
+		{
+			alert ("Tidur masih kosong");
+			$('#Tidur').focus();
+			return false;	
+		}
+		
+		$('#fromcatat').submit();
+			
+	}
+</script>
+
+<div class="container mt-3">
+  <h4>Pencatatan Tidur</h4>
+  
+  
+ <?php
+	$pesan=$this->session->flashdata('pesan');
+	if ($pesan=="")
+	{
+		echo "";	
+	}
+	else
+	{	
+?>
+	
+    <div class="alert alert-success alert-dismissible">
+  	<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+ 	  <?php echo $pesan; ?>
+	</div>
+      
+<?php
+	 }
+?>
+  
+  
+  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cTidur/simpandata'); ?>">
+  	 <input type="hidden" name="KodeTidur" id="KodeTidur"/>
+ 	 <div class="mb-3 mt-3">
+      <label>Waktu Mulai</label>
+      <input type="datetime-local" class="form-control" name="WaktuMulai" id="WaktuMulai" >
+    </div>
+	<div class="mb-3 mt-3">
+      <label>Waktu Selesai</label>
+      <input type="datetime-local" class="form-control" name="WaktuSelesai" id="WaktuSelesai" >
+    </div>
+    <div class="mb-3 mt-3">
+      <label>Kualitas Tidur</label>
+      <input type="text" class="form-control" id="KualitasTidur" name="KualitasTidur">
+    </div>
+    <div class="mb-3 mt-3">
+      <label>Keterangan</label>
+      <input type="text" class="form-control"  name="Keterangan" id="Keterangan">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
+  </form>
+</div>
