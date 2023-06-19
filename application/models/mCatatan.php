@@ -18,7 +18,7 @@
 			}
 			else
 			{
-				//edit	
+				//edit	g
 				$Kode=array(
 					'KodeCatatan'=>$KodeCatatan
 				);
