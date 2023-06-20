@@ -50,8 +50,8 @@
 
 		function editdata($KodeGejala)
 		{
-			$this->db->where('KodeGejala',$KodeGejala);
-			$query = $this->db->get('tbgejala');
+			$sql="select * from tbgejala where KodeGejala='".$KodeGejala."'";
+			$query=$this->db->query($sql);
 			if ($query->num_rows()>0)
 			{
 				$data=$query->row();

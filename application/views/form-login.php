@@ -31,7 +31,6 @@
                 <div class="form-notch-middle" style="width: 88.8px;"></div>
                 <div class="form-notch-trailing"></div>
             </div>
-            <br>
             <!-- Input password disini -->
             <div class="form-outline mb-4">
               <label class="form-label" style="margin-left: 0px;">Password</label>
