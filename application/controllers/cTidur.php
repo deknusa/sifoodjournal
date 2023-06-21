@@ -31,7 +31,6 @@
 		function editdata($KodeTidur)
 		{
 			$this->mTidur->editdata($KodeTidur);	
-			redirect('cTidur/formTidur');
 		}
 
 	}

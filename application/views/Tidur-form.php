@@ -1,19 +1,26 @@
 <script language="javascript">
 	function simpandata()
 	{
-		var Waktu=$('#Waktu').val();
-		if (Waktu=="")
+		var WaktuMulai=$('#WaktuMulai').val();
+		if (WaktuMulai=="")
 		{
-			alert ("Waktu masih kosong");
-			$('#Waktu').focus();
+			alert ("WaktuMulai masih kosong");
+			$('#WaktuMulai').focus();
+			return false;	
+		}	
+		var WaktuSelesai=$('#WaktuSelesai').val();
+		if (WaktuSelesai=="")
+		{
+			alert ("WaktuSelesai masih kosong");
+			$('#WaktuSelesai').focus();
 			return false;	
 		}	
 		
-		var Tidur=$('#Tidur').val();
-		if (Tidur=="")
+		var KualitasTidur=$('#KualitasTidur').val();
+		if (KualitasTidur=="")
 		{
-			alert ("Tidur masih kosong");
-			$('#Tidur').focus();
+			alert ("KualitasTidur masih kosong");
+			$('#KualitasTidur').focus();
 			return false;	
 		}
 		
@@ -23,7 +30,7 @@
 </script>
 
 <div class="container mt-3">
-  <h4>Pencatatan Tidur</h4>
+  <h4>Pencatatan KualitasTidur</h4>
   
   
  <?php
@@ -43,10 +50,10 @@
       
 <?php
 	 }
-?>
+?> 
   
   
-  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cTidur/simpandata'); ?>">
+  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('ctidur/simpandata'); ?>">
   	 <input type="hidden" name="KodeTidur" id="KodeTidur"/>
  	 <div class="mb-3 mt-3">
       <label>Waktu Mulai</label>
@@ -57,7 +64,7 @@
       <input type="datetime-local" class="form-control" name="WaktuSelesai" id="WaktuSelesai" >
     </div>
     <div class="mb-3 mt-3">
-      <label>Kualitas Tidur</label>
+      <label>KualitasTidur</label>
       <input type="text" class="form-control" id="KualitasTidur" name="KualitasTidur">
     </div>
     <div class="mb-3 mt-3">

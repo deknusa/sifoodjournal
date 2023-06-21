@@ -31,7 +31,7 @@
 		function editdata($KodeCatatan)
 		{
 			$this->mCatatan->editdata($KodeCatatan);	
-			redirect('cCatatan/formCatatan');
+	
 		}
 
 	}

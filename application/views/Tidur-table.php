@@ -6,8 +6,9 @@
   }
   function editdata(KodeTidur)
 	{
-		//alert(KodeTidur);
-    load("cTidur/editdata/"+KodeTidur,"#script");
+		if(confirm("Apakah yakin mengedit data ini ?")){
+     load("ctidur/editdata/"+KodeTidur,"#script");
+    }
 	}
 
 </script>
@@ -18,8 +19,9 @@
     <thead>
       <tr>
         <th>No</th>
-        <th>Waktu</th>
-        <th>Tidur</th>
+        <th>WaktuMulai</th>
+        <th>WaktuSelesai</th>
+        <th>KualitasTidur</th>
         <th>Keterangan</th>
         <th>Aksi</th>
       </tr>
@@ -38,8 +40,9 @@
     
       <tr>
         <td><?php echo $no; ?></td>
-        <td><?php echo $data->Waktu;  ?></td>
-        <td><?php echo $data->Tidur;  ?></td>
+        <td><?php echo $data->WaktuMulai;  ?></td>
+        <td><?php echo $data->WaktuSelesai;  ?></td>
+        <td><?php echo $data->KualitasTidur;  ?></td>
         <td><?php echo $data->Keterangan;  ?></td>
         <td>
         <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeTidur; ?>')">Edit</button>

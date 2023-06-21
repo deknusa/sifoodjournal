@@ -9,7 +9,7 @@
 
 		function formBAB()
 		{
-			$data['konten']=$this->load->view('form-bab','',TRUE);
+			$data['konten']=$this->load->view('bab-form','',TRUE);
 			$KodeUser=$this->session->userdata('KodeUser');
 			$hasiltable['hasil']=$this->mBAB->tampildata($KodeUser);
 			$data['table']=$this->load->view('bab-table',$hasiltable,TRUE);
