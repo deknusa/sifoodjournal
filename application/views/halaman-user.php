@@ -58,7 +58,7 @@
                                     <a class="nav-link" href="layout-static.html">Makan</a>
                                     <a class="nav-link" href="<?php echo base_url('cMood/formMood'); ?>">Mood</a>
                                     <a class="nav-link" href="<?php echo base_url('cGejala/formGejala'); ?>">Gejala</a>
-                                    <a class="nav-link" href="layout-static.html">BAB</a>
+                                    <a class="nav-link" href="<?php echo base_url('cBAB/formBAB'); ?>">BAB</a>
                                     <a class="nav-link" href="layout-static.html">Tidur</a>
                                     <a class="nav-link" href="layout-static.html">Catatan Harian</a>
                                    
