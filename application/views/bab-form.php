@@ -65,9 +65,9 @@
       <input type="text" class="form-control" id="Skala" name="Skala">
     </div>
     <div class="mb-3 mt-3">
-      <label>Keterangan</label>
-      <input type="textarea" class="form-control" id="Keterangan" name="Keterangan">
-    </div>
+	  <label>Keterangan</label>
+	  <textarea class="form-control"  name="Keterangan" id="Keterangan" cols="10" rows="5"></textarea> 
+	</div>
     <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
   </form>
 </div>

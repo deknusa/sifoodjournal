@@ -61,10 +61,10 @@
             <option value="Swing">Swing</option>
             <option value="Rewel">Rewel</option>
             </select>
-    <div class="mb-3 mt-3">
-      <label>Keterangan</label>
-      <input type="text" class="form-control"  name="Keterangan" id="Keterangan">
-    </div>
+	<div class="mb-3 mt-3">
+	  <label>Keterangan</label>
+	  <textarea class="form-control"  name="Keterangan" id="Keterangan" cols="10" rows="5"></textarea> 
+	</div>
     <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
   </form>
 </div>

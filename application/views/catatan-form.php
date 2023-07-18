@@ -52,10 +52,10 @@
       <label>Waktu</label>
       <input type="datetime-local" class="form-control" name="Waktu" id="Waktu" >
     </div>
-    <div class="mb-3 mt-3">
-      <label>Catatan</label>
-      <input type="text" class="form-control" id="Catatan" name="Catatan">
-    </div>
+	 <div class="mb-3 mt-3">
+	  <label>Catatan</label>
+	  <textarea class="form-control"  name="Catatan" id="Catatan" cols="10" rows="10"></textarea> 
+	</div>
     <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
   </form>
 </div>
