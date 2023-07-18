@@ -118,10 +118,18 @@
       <label>Bahan Makanan</label>
       <input type="text" class="form-control" id="BahanMakanan" name="BahanMakanan">
     </div>
-    <div class="mb-3 mt-3">
-      <label>Keterangan</label>
-      <input type="text" class="form-control"  name="Keterangan" id="Keterangan">
-    </div>
+	 <div class="mb-3 mt-3">
+		 <label class="form-label">Nama Dokumen</label>
+    	<input type="text" class="form-control" id="NamaDokumen" name="NamaDokumen">
+	</div>
+	<div class="mb-3 mt-3">
+		<label class="form-label">Upload File</label>
+		<input type="file" class="form-control" id="NamaFile" name="NamaFile">
+	</div>
+	<div class="mb-3 mt-3">
+	  <label>Keterangan</label>
+	  <textarea class="form-control"  name="Keterangan" id="Keterangan" cols="10" rows="5"></textarea> 
+	</div>
     <button type="button" class="btn btn-primary" onclick="simpandata()">Simpan</button>
   </form>
 </div>

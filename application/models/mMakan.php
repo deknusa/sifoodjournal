@@ -5,7 +5,18 @@
       //fungsi aksi menyimpan data ke dalam DB
 		function simpandata($User)
 		{
-			$data=$_POST;
+			//$data=$_POST;
+
+			$data['NamaMakan']=$NamaMakan=$this->input->post('NamaMakan');
+			$data['Waktu']=$Waktu=$this->input->post('Waktu');
+			$data['Jumlah']=$Jumlah=$this->input->post('Jumlah');
+			$data['Satuan']=$Satuan=$this->input->post('Satuan');
+			$data['BahanMakanan']=$BahanMakanan=$this->input->post('BahanMakanan');
+			$data['Kalori']=$Kalori=$this->input->post('Kalori');
+			//$data['NamaDokumen']=$NamaDokumen=$this->input->post('NamaDokumen');
+			$data['Keterangan']=$Keterangan=$this->input->post('Keterangan');
+
+			//$data['NamaFile']=$NamaFile=$this->upload($_FILES['NamaFile'],'NamaFile',$NamaDokumen);
 			$KodeUser=(int)$User;
 			$data['KodeUser']=$KodeUser;
             
@@ -65,6 +76,9 @@
 				echo "<script>$('#BahanMakanan').val('".$data->BahanMakanan."');</script>";
 				echo "<script>$('#Keterangan').val('".$data->Keterangan."');</script>";
 			}
-		}	
+		}
+		
+		//fungsi upload pindah ke cMakan
+		
 	}
 ?>

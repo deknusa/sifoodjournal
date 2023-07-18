@@ -9,6 +9,10 @@
     load("cmakan/editdata/"+KodeMakan,"#script");
 	}
 
+  function tampilfoto(NmmaFile) {
+    window.open("berkas/"+NamaFile, "_blank");
+  }
+
 </script>
 
 <div class="container mt-3">
@@ -47,10 +51,13 @@
            <td><?php echo $data->Satuan;?></td>
            <td><?php echo $data->Kalori;?></td>
            <td><?php echo $data->BahanMakanan;?></td>
+           <td><?php echo $data->NamaDokumen;?></td>
+           <td><?php echo $data->NamaFile;?></td>
            <td><?php echo $data->Keterangan;?></td>
            <td>
            <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeMakan;?>')">Edit</button>
            <button type="button" class="btn btn-danger btn-sm" onclick="hapusdata('<?php echo $data->KodeMakan;?>')">Hapus</button>
+           <button type="button" class="btn btn-success btn-sm" onclick="tampilfoto('<?php echo $data->NamaFile;?>')">Foto</button>
            </td>
          </tr>
             
