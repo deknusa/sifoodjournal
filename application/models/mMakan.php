@@ -3,25 +3,9 @@
 	{
 
       //fungsi aksi menyimpan data ke dalam DB
-		function simpandata($User)
+		function simpandata($data)
 		{
-			//$data=$_POST;
-
-			$data['NamaMakan']=$NamaMakan=$this->input->post('NamaMakan');
-			$data['Waktu']=$Waktu=$this->input->post('Waktu');
-			$data['Jumlah']=$Jumlah=$this->input->post('Jumlah');
-			$data['Satuan']=$Satuan=$this->input->post('Satuan');
-			$data['BahanMakanan']=$BahanMakanan=$this->input->post('BahanMakanan');
-			$data['Kalori']=$Kalori=$this->input->post('Kalori');
-			//$data['NamaDokumen']=$NamaDokumen=$this->input->post('NamaDokumen');
-			$data['Keterangan']=$Keterangan=$this->input->post('Keterangan');
-
-			//$data['NamaFile']=$NamaFile=$this->upload($_FILES['NamaFile'],'NamaFile',$NamaDokumen);
-			$KodeUser=(int)$User;
-			$data['KodeUser']=$KodeUser;
-            
-			$KodeMakan=$data['KodeMakan'];
-			if ($KodeMakan=="")
+			if ($data['KodeMakan']=="")
 			{
             //penulisan SQL menggunakan query builder
 				//simpan
@@ -80,5 +64,27 @@
 		
 		//fungsi upload pindah ke cMakan
 		
+        function upload($uploadFile,$field,$nama)
+		{
+			$NamaFile=str_replace(' ', '', $nama);
+			$extractFile = pathinfo($uploadFile['name']);	
+			$ekst = $extractFile['extension'];
+			$newName = $NamaFile.".".$ekst; 
+			$config['upload_path']				= FCPATH.'berkas';
+			$config['allowed_types']			= 'pdf|jpg|png|jpeg';
+			$config['max_size']         		= 5000;
+			$config['overwrite'] 				= true;
+			$config['file_name'] 				= $newName;
+			$this->upload->initialize($config);
+			if (!$this->upload->do_upload($field)){
+				$error = array('error' => $this->upload->display_errors());
+				print_r($error);
+				
+				return "";
+			}else{
+				
+				return $newName;
+			}
+		 }
 	}
 ?>

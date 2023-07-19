@@ -20,17 +20,25 @@
 		//fungsi melakukan aksi simpan yang di-input pengguna pada form
 		function simpandata()
 		{
-			$data['NamaDokumen']=$NamaDokumen=$this->input->post('NamaDokumen');
-			$data['NamaFile']=$NamaFile=$this->upload($_FILES['NamaFile'],'NamaFile',$NamaDokumen);
-
-			$data=array(
-				'NamaDokumen'=>$NamaDokumen,
-				'NamaFile'=>$NamaFile
-			);	
-			
 			$User=$this->session->userdata('KodeUser');
-			$this->mMakan->simpandata($User);
-			redirect('cmakan/formmakan');	
+			$NamaDokumen=$this->input->post('NamaDokumen');
+			$NamaFile=$this->mMakan->upload($_FILES['NamaFile'],'NamaFile',$NamaDokumen);
+			
+			$data=array(
+				'KodeMakan'=>$this->input->post('KodeMakan'),
+				'NamaMakan' => $this->input->post('NamaMakan'),
+				'Waktu' => $this->input->post('Waktu'),
+				'Jumlah' => $this->input->post('Jumlah'),
+				'Satuan' => $this->input->post('Satuan'),
+				'BahanMakanan' => $this->input->post('BahanMakanan'),
+				'Kalori' => $this->input->post('Kalori'),
+				'NamaDokumen'=>$NamaDokumen,
+				'NamaFile'=>$NamaFile,
+				'Keterangan'=> $this->input->post('Keterangan'),
+				'KodeUser'=> (int) $User
+			);	
+			$this->mMakan->simpandata($data);
+			redirect('cMakan/formmakan');	
 		}
 
 		//fungsi melakukan aksi hapus data pada tabel
@@ -45,28 +53,7 @@
 			$this->mMakan->editdata($KodeMakan);	
 		}
 
-		//fungsi upload file
-		function upload($uploadFile,$field,$nama)
-		{
-			$NamaFile=str_replace(' ', '', $nama);
-			$extractFile = pathinfo($uploadFile['name']);	
-			$ekst = $extractFile['extension'];
-			$newName = $NamaFile.".".$ekst; 
-			$config['upload_path']				= FCPATH.'berkas/';
-			$config['allowed_types']			= 'jpg|png|jpeg';
-			$config['max_size']         		= 5000;
-			$config['overwrite'] 				= true;
-			$config['file_name'] 				= $newName;
-			$this->upload->initialize($config);
-			if (!$this->upload->do_upload($field)){
-				$error = array('error' => $this->upload->display_errors());
-				print_r($error);
-				
-				return "";
-			}else{
-				return $newName;
-			}
-		 }
+		
 
 	}
 ?>
