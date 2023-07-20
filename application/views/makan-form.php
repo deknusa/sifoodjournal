@@ -49,6 +49,22 @@
 			return false;	
 		}
 
+		var NamaDokumen=$('#NamaDokumen').val();
+		if (NamaDokumen=="")
+		{
+			alert ("NamaDokumen masih kosong");
+			$('#NamaDokumen').focus();
+			return false;	
+		}
+
+		var NamaFile=$('#NamaFile').val();
+		if (NamaFile=="")
+		{
+			alert ("BahanMakanan masih kosong");
+			$('#BahanMakanan').focus();
+			return false;	
+		}
+
 		var Keterangan=$('#Keterangan').val();
 		if (Keterangan=="")
 		{

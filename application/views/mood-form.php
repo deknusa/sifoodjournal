@@ -53,14 +53,26 @@
       <input type="datetime-local" class="form-control" name="Waktu" id="Waktu" >
     </div>
     <label>Mood</label>
-            <select class="form-select" id="Mood" name="Mood">
-            <option value="">Pilih</option>
-            <option value="Gembira">Gembira</option>
-            <option value="Sedih">Sedih</option>
-            <option value="Biasa">Biasa</option>
-            <option value="Swing">Swing</option>
-            <option value="Rewel">Rewel</option>
-            </select>
+	 <div class="form-check">
+  		<input class="form-check-input" type="radio" id="Mood" name="Mood" value="Gembira">
+  		<label class="form-check-label" for="Gembira">Gembira</label>
+	 </div>
+	 <div class="form-check">
+  		<input class="form-check-input" type="radio" id="Mood" name="Mood" value="Sedih">
+  		<label class="form-check-label" for="Sedih">Sedih</label>
+	 </div>
+	 <div class="form-check">
+  		<input class="form-check-input" type="radio" id="Mood" name="Mood" value="Biasa">
+  		<label class="form-check-label" for="Biasa">Biasa</label>
+	 </div>
+	 <div class="form-check">
+  		<input class="form-check-input" type="radio" id="Mood" name="Mood" value="Swing">
+  		<label class="form-check-label" for="Swing">Swing</label>
+	 </div>
+	 <div class="form-check">
+  		<input class="form-check-input" type="radio" id="Mood" name="Mood" value="Rewel">
+  		<label class="form-check-label" for="Rewel">Rewel</label>
+	 </div>
 	<div class="mb-3 mt-3">
 	  <label>Keterangan</label>
 	  <textarea class="form-control"  name="Keterangan" id="Keterangan" cols="10" rows="5"></textarea> 
