@@ -86,7 +86,7 @@
 ?>
   
   
-  <form name="fromcatat" id="fromcatat" method="post" action="<?php echo base_url('cmakan/simpandata'); ?>">
+  <form name="fromcatat" id="fromcatat" method="post" target="_self" enctype="multipart/form-data" role="form" data-toggle="validator" novalidate action="<?php echo base_url('cmakan/simpandata'); ?>">
   	 <input type="hidden" name="KodeMakan" id="KodeMakan"/>
  	 <div class="mb-3 mt-3">
       <label>Nama Makanan</label>

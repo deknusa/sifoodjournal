@@ -58,6 +58,8 @@
 				echo "<script>$('#Satuan').val('".$data->Satuan."');</script>";
 				echo "<script>$('#Kalori').val('".$data->Kalori."');</script>";
 				echo "<script>$('#BahanMakanan').val('".$data->BahanMakanan."');</script>";
+				echo "<script>$('#NamaDokumen').val('".$data->NamaDokumen."');</script>";
+				echo "<script>$('#NamaFile').val('".$data->NamaFile."');</script>";
 				echo "<script>$('#Keterangan').val('".$data->Keterangan."');</script>";
 			}
 		}
@@ -66,6 +68,7 @@
 		
         function upload($uploadFile,$field,$nama)
 		{
+			$this->load->library('upload');
 			$NamaFile=str_replace(' ', '', $nama);
 			$extractFile = pathinfo($uploadFile['name']);	
 			$ekst = $extractFile['extension'];
