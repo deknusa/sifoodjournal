@@ -9,6 +9,10 @@
     load("cmakan/editdata/"+KodeMakan,"#script");
 	}
 
+  // function tampilfoto(NmmaFile) {
+  //   window.open("berkas/"+NamaFile, "_blank");
+  // }
+
 </script>
 
 <div class="container mt-3">
@@ -51,6 +55,9 @@
            <td>
            <button type="button" class="btn btn-primary btn-sm" onclick="editdata('<?php echo $data->KodeMakan;?>')">Edit</button>
            <button type="button" class="btn btn-danger btn-sm" onclick="hapusdata('<?php echo $data->KodeMakan;?>')">Hapus</button>
+           <a href="<?php echo base_url(); ?>berkas/<?php echo $data->NamaFile; ?>" target="_blank">
+            <button type="button" class="btn btn-success btn-sm">Foto</button>
+           </a>
            </td>
          </tr>
             

@@ -21,8 +21,24 @@
 		function simpandata()
 		{
 			$User=$this->session->userdata('KodeUser');
-			$this->mMakan->simpandata($User);
-			redirect('cmakan/formmakan');	
+			$NamaDokumen=$this->input->post('NamaDokumen');
+			$NamaFile=$this->mMakan->upload($_FILES['NamaFile'],'NamaFile',$NamaDokumen);
+			
+			$data=array(
+				'KodeMakan'=>$this->input->post('KodeMakan'),
+				'NamaMakan' => $this->input->post('NamaMakan'),
+				'Waktu' => $this->input->post('Waktu'),
+				'Jumlah' => $this->input->post('Jumlah'),
+				'Satuan' => $this->input->post('Satuan'),
+				'BahanMakanan' => $this->input->post('BahanMakanan'),
+				'Kalori' => $this->input->post('Kalori'),
+				'NamaDokumen'=>$NamaDokumen,
+				'NamaFile'=>$NamaFile,
+				'Keterangan'=> $this->input->post('Keterangan'),
+				'KodeUser'=> (int) $User
+			);	
+			$this->mMakan->simpandata($data);
+			redirect('cMakan/formmakan');	
 		}
 
 		//fungsi melakukan aksi hapus data pada tabel
@@ -36,6 +52,8 @@
 		{
 			$this->mMakan->editdata($KodeMakan);	
 		}
+
+		
 
 	}
 ?>
