@@ -52,8 +52,5 @@
 		{
 			$this->mMakan->editdata($KodeMakan);	
 		}
-
-		
-
 	}
 ?>

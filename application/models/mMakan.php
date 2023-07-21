@@ -66,7 +66,7 @@
 		
 		//fungsi upload pindah ke cMakan
 		
-        function upload($uploadFile,$field,$nama)
+      function upload($uploadFile,$field,$nama)
 		{
 			$this->load->library('upload');
 			$NamaFile=str_replace(' ', '', $nama);
@@ -88,6 +88,6 @@
 				
 				return $newName;
 			}
-		 }
+		}
 	}
 ?>
